@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Soal 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Volume Tabung</title>
 </head>
 <body>
-    <h1>Soal 1</h1>
-    <form method="post">
-        <input type="number" name="jarijari"> <br>
-        <input type="number" name="tinggi"> <br>
-        <button type="submit">Hitung Volume</button>
-        <button type="reset">Reset</button>
+    <h1>Hitung Volume Tabung</h1>
+    <form action="volume.php" method="post">
+        <label for="radius">Jari-jari alas (r):</label>
+        <input type="number" id="radius" name="radius" step="any" required><br><br>
+
+        <label for="height">Tinggi Tabung (h):</label>
+        <input type="number" id="height" name="height" step="any" required><br><br>
+
+        <input type="submit" value="Hitung Volume">
     </form>
-    <?php
-        // tambahkan perhitungan volume tabung di sini
-    ?>
 </body>
 </html>

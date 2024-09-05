@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Soal 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Jarak</title>
 </head>
 <body>
-    <h1>Soal 1</h1>
-    <form method="post">
-        <select name="pilihan">
-            <option value="">KM ke M</option>
-            <option value="">KM ke CM</option>
-            <option value="">KM ke MM</option>
-        </select>
-        <button type="submit">Konversi</button>
+    <h1>Konversi Jarak</h1>
+    <form action="konversi.php" method="post">
+        <label for="distance">Jarak dalam km:</label>
+        <input type="number" id="distance" name="distance" step="any" required><br><br>
+
+        <label for="conversion">Pilih konversi:</label>
+        <select id="conversion" name="conversion" required>
+            <option value="m">km ke meter</option>
+            <option value="cm">km ke centimeter</option>
+            <option value="mm">km ke millimeter</option>
+        </select><br><br>
+
+        <input type="submit" value="Konversi">
     </form>
-    <?php
-        // lakukan perhitungan konversi jarak di sini
-    ?>
 </body>
 </html>
